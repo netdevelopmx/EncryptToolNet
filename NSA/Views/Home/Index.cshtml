@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "NSA Challenge";
+}
+@model NSA.Data.ENCRYP
+<div class="row">
+    <div class="panel">
+        <div class="panel-heading text-center">
+            do you have the Biggest Brain?<h2>Decrypt the Phrase</h2>
+            <h3 style="color: orange">346|dklnpknl|5696|beoynco|864|qmgltics|178|ytg|3955|mdynp
+            |5661|ah|3436|zlxxphz|3847|xdqmeo|1140|nod|5429|isk|</h3>
+        </div>
+        <div class="panel-body">
+            <div class="form-horizontal">
+                <h3 >
+                    Test the encryption (only alphabet characters)
+                </h3>
+                <hr/>
+                <div class="form-group" >
+                    @Html.LabelFor(n => n.WORD, "Type your Phrase" , new { @class="col-md-3"})
+                    <div class="col-md-4">
+                        @Html.TextBoxFor(n => n.WORD_ENCRY, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input class="btn btn-info" type="button" value="Encrypt" id="btnEncrypt" />
+                    </div>
+                </div>    
+                <div class="form-group">
+                    @Html.LabelFor(n => n.WORD_ENCRY, "Result:", new { @class = "col-md-3" })
+                    <div class="col-md-4">
+                        <span id="txtresult"></span>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <div class="panel-footer">
+            it is an idea to know if really exists somebody with the biggest brain or only people with the keys for the backdoors . (NSA)
+        </div>
+        <div class="panel-footer">
+            <a href="http://twitter.com/chavallb">@@chavallb</a> Developer 
+        </div>
+    </div>
+</div>
